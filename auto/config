@@ -1,0 +1,20 @@
+#!/bin/bash
+# See example files at /usr/share/doc/live-build/examples
+
+# Exit on error
+set -e
+
+# See man lb config
+lb config noauto \
+	--mode debian \
+	--architecture i386 \
+	--debian-installer false \
+	--archive-areas "main contrib non-free" \
+	--apt-indices false \
+	--apt-recommends false \
+	--memtest none
+	#--parent-mirror-bootstrap http://
+	# For above check log files
+	# Define Grub splash image
+	#--grub-splash FILE
+	#--linux-flavours 586 \
