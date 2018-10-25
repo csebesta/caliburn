@@ -7,14 +7,47 @@ set -e
 # See man lb config
 lb config noauto \
 	--mode debian \
-	--architecture i386 \
+	--architecture amd64 \
+	--updates false \
+	--backports false \
+	--source false \
 	--debian-installer false \
 	--archive-areas "main contrib non-free" \
 	--apt-indices false \
 	--apt-recommends false \
-	--memtest none
-	#--parent-mirror-bootstrap http://
-	# For above check log files
+	--memtest none \
+	--bootappend-live "boot=live components splash username=root hostname=caliburn nox11autologin" \
+	--iso-application "caliburn linux" \
+	--iso-publisher "csebesta" \
+	--iso-volume "caliburn"
+	#--linux-flavours 686-pae \
 	# Define Grub splash image
 	#--grub-splash FILE
 	#--linux-flavours 586 \
+
+# Define installed packages
+echo "Writing package lists..."
+cat > config/package-lists/caliburn.list.chroot << EOF
+#-----------------------------------------------------------------------
+# System basics
+alsa-utils
+coreutils
+
+# Slide dependencies
+feh
+fonts-liberation2
+git
+graphicsmagick
+stow
+xmobar
+xmonad
+xorg
+xterm
+
+#-----------------------------------------------------------------------
+# Useful utilities
+info
+parted
+surf
+vim
+EOF
