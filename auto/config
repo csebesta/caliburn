@@ -24,30 +24,3 @@ lb config noauto \
 	# Define Grub splash image
 	#--grub-splash FILE
 	#--linux-flavours 586 \
-
-## Define installed packages
-#echo "Writing package lists..."
-#cat > config/package-lists/caliburn.list.chroot << EOF
-##-----------------------------------------------------------------------
-## System basics
-#alsa-utils
-#coreutils
-#
-## Slide dependencies
-#feh
-#fonts-liberation2
-#git
-#graphicsmagick
-#stow
-#xmobar
-#xmonad
-#xorg
-#xterm
-#
-##-----------------------------------------------------------------------
-## Useful utilities
-#info
-#parted
-#surf
-#vim
-#EOF

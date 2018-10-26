@@ -9,7 +9,7 @@ Features
 - Resource light
 - Configured with useful software packages
 
-Installation
+Installation and Usage
 ------------
 
 ### Basic installation
@@ -33,6 +33,11 @@ From the main project directory, and according to reccomendations on https://www
 ```
 dd if=<file> of=<device> bs=4M status=progress; sync
 ```
+
+Configuration
+-------------
+
+Caliburn can be modified by changes in the build.sh script.
 
 License
 -------
