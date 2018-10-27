@@ -40,6 +40,7 @@ Configuration
 Caliburn can be modified by changing or adding files in the config directory.
 
 `config/package-lists/caliburn.list.chroot` The basic package list.
+`config/includes.chroot/etc/modprobe.d/nobeep.conf` Disables system beep.
 
 License
 -------

@@ -7,6 +7,7 @@ set -e
 # See man lb config
 lb config noauto \
 	--mode debian \
+	--distribution stretch \
 	--architecture amd64 \
 	--updates false \
 	--backports false \
@@ -21,6 +22,4 @@ lb config noauto \
 	--iso-publisher "csebesta" \
 	--iso-volume "caliburn"
 	#--linux-flavours 686-pae \
-	# Define Grub splash image
-	#--grub-splash FILE
-	#--linux-flavours 586 \
+	#--grub-splash FILE \
