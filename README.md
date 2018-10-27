@@ -37,7 +37,9 @@ dd if=<file> of=<device> bs=4M status=progress; sync
 Configuration
 -------------
 
-Caliburn can be modified by changes in the build.sh script.
+Caliburn can be modified by changing or adding files in the config directory.
+
+`config/package-lists/caliburn.list.chroot` The basic package list.
 
 License
 -------

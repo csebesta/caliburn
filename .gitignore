@@ -3,6 +3,6 @@
 
 # Except...
 !/auto
-!/build.sh
+!/config
 !/README.md
 !/.gitignore
