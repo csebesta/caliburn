@@ -4,5 +4,6 @@
 # Except...
 !/auto
 !/config
+!/LICENSE
 !/README.md
 !/.gitignore
