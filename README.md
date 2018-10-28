@@ -39,8 +39,10 @@ Configuration
 
 Caliburn can be modified by changing or adding files in the config directory.
 
-`config/package-lists/caliburn.list.chroot` The basic package list.
-`config/includes.chroot/etc/modprobe.d/nobeep.conf` Disables system beep.
+- `config/includes.binary/isolinux/splash.png` Overwrite the default splash image.
+- `config/includes.chroot/etc/modprobe.d/nobeep.conf` Disables system beep.
+- `config/includes.chroot/lib/live/config/0031-root-password` Change the root password. This will be "merlin" by default.
+- `config/package-lists/caliburn.list.chroot` The basic package list.
 
 License
 -------
