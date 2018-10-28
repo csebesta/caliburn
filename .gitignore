@@ -1,11 +1,11 @@
 # Ignore everything
 /*
+/config/build
+/config/hooks
 
 # Except...
 !/auto
 !/config
-!/config/build
-!/config/hooks
 !/LICENSE
 !/README.md
 !/.gitignore

@@ -17,7 +17,7 @@ lb config noauto \
 	--apt-indices false \
 	--apt-recommends false \
 	--memtest none \
-	--bootappend-live "boot=live components splash username=root hostname=caliburn nox11autologin" \
+	--bootappend-live "boot=live components splash username=root hostname=caliburn noautologin" \
 	--iso-application "caliburn linux" \
 	--iso-publisher "csebesta" \
 	--iso-volume "caliburn"
