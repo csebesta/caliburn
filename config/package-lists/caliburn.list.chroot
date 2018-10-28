@@ -1,0 +1,16 @@
+alsa-utils
+coreutils
+
+git
+graphicsmagick
+feh
+fonts-liberation2
+stow
+suckless-tools
+xmobar
+xmonad
+xorg
+xterm
+
+surf
+vim
