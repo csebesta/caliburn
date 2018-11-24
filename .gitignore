@@ -2,6 +2,7 @@
 /*
 /config/build
 /config/hooks
+/config/package-lists/live.list.chroot
 
 # Except...
 !/auto
